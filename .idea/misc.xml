@@ -3,15 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_ambient.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_experimental.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_house.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_pop.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_rb.xml" value="0.1785" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/activity_splash.xml" value="0.34375" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_ambient.xml" value="0.34375" />
-        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_drum_bass.xml" value="0.11666666666666667" />
-        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_experimental.xml" value="0.11666666666666667" />
-        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_house.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_drum_bass.xml" value="0.33" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_experimental.xml" value="0.25" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_house.xml" value="0.25" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_pop.xml" value="0.34375" />
-        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_r_b.xml" value="0.11666666666666667" />
-        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_trap_hip_hop.xml" value="0.11666666666666667" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_r_b.xml" value="0.25" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_trap_hip_hop.xml" value="0.25" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/item_music.xml" value="0.34375" />
       </map>
     </option>
   </component>
