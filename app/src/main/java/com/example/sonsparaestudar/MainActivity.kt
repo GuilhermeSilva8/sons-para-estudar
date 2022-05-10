@@ -124,8 +124,8 @@ class MainActivity : AppCompatActivity() {
         }, 0)
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onDestroy() {
+        super.onDestroy()
 
         mp?.stop()
         mp?.reset()

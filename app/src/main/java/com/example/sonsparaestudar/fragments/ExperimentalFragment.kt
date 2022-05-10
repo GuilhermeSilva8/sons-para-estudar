@@ -48,6 +48,7 @@ class ExperimentalFragment : Fragment() {
             val intent = Intent(activity, MainActivity::class.java)
             intent.putExtra("music", it)
             intent.putExtra("tab", 2)
+            activity?.finish()  //Kill the activity from which you will go to next activity
             startActivity(intent)
         }
 
