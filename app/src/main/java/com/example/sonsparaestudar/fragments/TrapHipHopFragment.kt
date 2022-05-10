@@ -5,9 +5,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.example.sonsparaestudar.Music
 import com.example.sonsparaestudar.R
+import com.example.sonsparaestudar.adapters.MusicAdapter
+import com.example.sonsparaestudar.databinding.FragmentTrapHipHopBinding
 
 class TrapHipHopFragment : Fragment() {
+
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var musicList: ArrayList<Music>
+    private lateinit var musicAdapter: MusicAdapter
+    private lateinit var binding : FragmentTrapHipHopBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +27,20 @@ class TrapHipHopFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_trap_hip_hop, container, false)
+        //return inflater.inflate(R.layout.fragment_trap_hip_hop, container, false)
+        binding = FragmentTrapHipHopBinding.inflate(layoutInflater, container, false)
+        val view = binding.root
+        recyclerView = binding.rvMusics
+
+        musicList = ArrayList()
+        musicList.add(Music(R.drawable.ic_trap, "CBPD", R.raw.hh_cbpd))
+        musicList.add(Music(R.drawable.ic_trap, "Grinding Hard", R.raw.trap_grindinghard))
+        musicList.add(Music(R.drawable.ic_trap, "HK", R.raw.trap_hk))
+        musicList.add(Music(R.drawable.ic_trap, "Nav Type", R.raw.trap_navtype))
+
+        musicAdapter = MusicAdapter(musicList)
+        recyclerView.adapter = musicAdapter
+
+        return view
     }
 }
