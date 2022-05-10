@@ -1,11 +1,13 @@
 package com.example.sonsparaestudar.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.sonsparaestudar.MainActivity
 import com.example.sonsparaestudar.Music
 import com.example.sonsparaestudar.R
 import com.example.sonsparaestudar.adapters.MusicAdapter
@@ -41,6 +43,13 @@ class ExperimentalFragment : Fragment() {
 
         musicAdapter = MusicAdapter(musicList)
         recyclerView.adapter = musicAdapter
+
+        musicAdapter.onItemClick = {
+            val intent = Intent(activity, MainActivity::class.java)
+            intent.putExtra("music", it)
+            intent.putExtra("tab", 2)
+            startActivity(intent)
+        }
 
         return view
     }

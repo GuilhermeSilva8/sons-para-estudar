@@ -2,6 +2,9 @@ package com.example.sonsparaestudar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.viewpager2.widget.ViewPager2
 import com.example.sonsparaestudar.adapters.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
@@ -42,5 +45,19 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }.attach()
+
+        val music = intent.getParcelableExtra<Music>("music")
+        val tab = intent.getIntExtra("tab", 0)
+        tabLayout.getTabAt(tab)?.select()
+        Toast.makeText(this, "Selected ${music?.title} from tab $tab", Toast.LENGTH_SHORT).show()
+
+        if(music != null) {
+            //controlSound(music.song)
+        }
+    }
+
+    override fun onStop() {
+        super.onStop()
+
     }
 }
