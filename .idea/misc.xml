@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_ambient.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_drum_bass.xml" value="0.1785" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_experimental.xml" value="0.1785" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_house.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_logo_music.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_pause.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_play.xml" value="0.1785" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_pop.xml" value="0.1785" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_rb.xml" value="0.1785" />
+        <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/drawable/ic_trap.xml" value="0.1785" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/activity_splash.xml" value="0.34375" />
         <entry key="..\:/Users/danie/Documents/Guilherme/Sons para Estudar/app/src/main/res/layout/fragment_ambient.xml" value="0.34375" />

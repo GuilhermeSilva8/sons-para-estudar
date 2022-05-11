@@ -48,6 +48,7 @@ class AmbientFragment : Fragment() {
             val intent = Intent(activity, MainActivity::class.java)
             intent.putExtra("music", it)
             intent.putExtra("tab", 0)
+            intent.putParcelableArrayListExtra("musics", musicList)
             activity?.finish()  //Kill the activity from which you will go to next activity
             startActivity(intent)
         }

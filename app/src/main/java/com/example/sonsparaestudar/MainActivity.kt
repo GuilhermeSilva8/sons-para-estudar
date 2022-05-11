@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private var mp: MediaPlayer? = null
+    var music: Music? = null
+    var musics: ArrayList<Music>? = null
+    var actualMusic: Int? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,12 +62,17 @@ class MainActivity : AppCompatActivity() {
             }
         }.attach()
 
-        val music = intent.getParcelableExtra<Music>("music")
+        music = intent.getParcelableExtra<Music>("music")
+        musics = intent.getParcelableArrayListExtra<Music>("musics")
+        actualMusic = musics?.indexOf(music)
+
         val tab = intent.getIntExtra("tab", 0)
         tabLayout.getTabAt(tab)?.select()
 
+        binding.tvActualMusic.text = music?.title
+
         if(music != null) {
-            controlSound(music.song)
+            controlSound(music!!.song)
         }
     }
 
@@ -79,6 +88,21 @@ class MainActivity : AppCompatActivity() {
         }
 
         mp = MediaPlayer.create(this, id)
+
+        mp?.setOnCompletionListener {
+            if(actualMusic!! >= musics!!.size - 1) {
+                actualMusic = 0
+                music = musics?.get(actualMusic!!)
+                binding.tvActualMusic.text = music!!.title
+                controlSound(music!!.song)
+            } else {
+                actualMusic = actualMusic!! + 1
+                music = musics?.get(actualMusic!!)
+                binding.tvActualMusic.text = music!!.title
+                controlSound(music!!.song)
+            }
+        }
+
         initialiseSeekBar()
         mp?.start()
 

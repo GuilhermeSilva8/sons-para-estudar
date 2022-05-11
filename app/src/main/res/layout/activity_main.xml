@@ -10,6 +10,7 @@
         android:id="@+id/tlAbas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabTextColor="@color/brown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,29 +21,54 @@
         android:id="@+id/vpFragments"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/sbTime"
+        app:layout_constraintBottom_toTopOf="@+id/clPlayBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tlAbas" />
+        app:layout_constraintTop_toBottomOf="@+id/tlAbas" />
 
-    <SeekBar
-        android:id="@+id/sbTime"
-        android:layout_width="0dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPlayBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:progressTint="@color/purple_700"
-        android:thumbTint="@color/purple_700"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fabPlayPause"
-        app:layout_constraintTop_toTopOf="@+id/fabPlayPause" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabPlayPause"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/purple_700"
-        android:src="@drawable/ic_play"
+        android:background="@color/yellow"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+        <SeekBar
+            android:id="@+id/sbTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/brown"
+            android:thumbTint="@color/brown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/fabPlayPause"
+            app:layout_constraintTop_toTopOf="@+id/fabPlayPause" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/ic_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tvActualMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/fabPlayPause"
+            app:layout_constraintTop_toBottomOf="@+id/sbTime" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
