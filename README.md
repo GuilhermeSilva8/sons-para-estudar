@@ -3,15 +3,9 @@
 <img src="https://user-images.githubusercontent.com/56845163/169066193-4ec44355-cb41-4cc1-ac35-b6bbe69d4d9b.jpg" width="260"> <img src="https://user-images.githubusercontent.com/56845163/169066211-46aa5cd2-7ec7-416e-8e46-f5b3ef111a37.jpg" width="260"> <img src="https://user-images.githubusercontent.com/56845163/169066230-9b760a23-56e2-4c77-b7c3-eda8913ddcfe.jpg" width="260"> 
 <img src="https://user-images.githubusercontent.com/56845163/169066239-74645b5b-a0ab-4da5-a35a-c5beda3f1efa.jpg" width="260"> <img src="https://user-images.githubusercontent.com/56845163/169066255-8aeace31-3562-4bf6-89ea-537f9b8b02b5.jpg" width="260"> <img src="https://user-images.githubusercontent.com/56845163/169066268-de084bb2-69fe-42bc-936c-af55fbca4680.jpg" width="260">
 
-# Sobre este Projeto
+# Descrição
 
-A ideia do App é permitir maior concentração nos estudos através de músicas instrumentais.
-
-# Por que?
-
-Esse projeto faz parte do meu portifólio pessoal, então todo feedback é bem-vindo sobre o design, a estrutura, o código e qualquer coisa que você acredite que possa me tornar um desenvolvedor melhor.
-
-Email: guilhermecsilva8@gmail.com
+Aplicativo Android que reproduz músicas instrumentais de diferentes categorias.
 
 # Instalação
 
